@@ -23,3 +23,39 @@ font-style: normal;
 button.btn:hover {
     background-color: purple;
 }
+
+.row1 {
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+    text-align: center;
+}
+
+.savebtn {
+    text-align: right;
+}
+
+.rowpad {
+    padding-left: 8cm;
+    font-size: 22pt;
+}
+
+.row10 {
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-top: 3cm;
+}
+
+.titletext {
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.descriptioninput {
+    padding-left: 8cm;
+    padding-right: 8cm;
+}
+
+.descriptionhere {
+    padding-bottom: 1cm;
+}
