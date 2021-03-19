@@ -1,0 +1,21 @@
+* {
+    font-family: 'DatalegreyaGradient';
+    font-weight: bold;
+    font-style: normal;
+
+   
+}
+#eventH2 {
+    text-align: center;
+    padding-top: 3cm;
+    font-size: 72pt;
+
+}
+
+.delete-export {
+    text-align: center;
+}
+
+th {
+    font-size: 12pt;
+}
