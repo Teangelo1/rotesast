@@ -21,41 +21,78 @@ font-style: normal;
 }
 
 button.btn:hover {
-    background-color: purple;
+    background-color: rgb(30, 143, 255);
 }
+
 
 .row1 {
     padding-top: 2cm;
-    padding-bottom: 1cm;
+    padding-bottom: .5cm;
     text-align: center;
 }
 
 .savebtn {
-    text-align: right;
+    text-align: center;
+    align-content: center;
+    margin-top: .25cm;
 }
 
 .rowpad {
-    padding-left: 8cm;
-    font-size: 22pt;
+    font-family: 'DatalegreyaGradient';
+    font-size: 16pt;
+    /* padding-left: 15cm; */
+    font-weight: bold;
+    padding-top: .25cm;
 }
 
 .row10 {
     text-align: center;
-    font-size: 18pt;
-    font-weight: bold;
-    padding-top: 3cm;
+    font-size: 20pt;
+    font-weight: 400;
+    padding-top: .5cm;
 }
 
 .titletext {
-    font-size: 36pt;
+    font-family: 'DatalegreyaGradient';
     font-weight: bold;
+    font-style: normal;
+    font-size: 72pt;
 }
 
 .descriptioninput {
-    padding-left: 8cm;
-    padding-right: 8cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
 }
 
 .descriptionhere {
-    padding-bottom: 1cm;
+    padding-bottom: .5cm;
+}
+
+.titleinput{
+height: 1cm;
+padding-bottom: .5cm;
+line-height: 10pt;
+
+}
+
+a.dropdown-item:hover {
+    background-color: rgba(30, 144, 255, 0.445);
+}
+
+.startcol {
+
+    padding-right: 0cm;
+}
+
+.option1:hover {
+    background-color: antiquewhite;
+}
+
+/* select.select1:hover {
+    background-color: purple;
+} */
+
+
+.col-3 {
+    padding-left: 1vw;
 }
