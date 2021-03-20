@@ -38,4 +38,8 @@ module.exports = function(app) {
   app.get("/loadpage", isAuthenticated, (req, res) => {
     res.render("index");
   });
+
+  app.get("/logout", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+  });
 };

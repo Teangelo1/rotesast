@@ -134,3 +134,9 @@ width: 11vw;
 .homebuttons {
     margin: .5cm;
 }
+
+.addeventbtn {
+    margin-bottom: .5cm;
+    float: right;
+    margin-right: .9cm;
+}
