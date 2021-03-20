@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="/public/styles/style.css" type="text/css" /> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/datalegreya" type="text/css"/>
+        <link href="styles/test.css" rel="stylesheet" type="text/css">
+	<title>Amnesia NULL!</title>
+	 <script src="/assets/js/server.js"></script> 
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+<body>
+<!-- row one (title and save button) -->
+<!-- FIX ALIGN ISSUE -->
+<div class="row">
+  <div class="col-1 text-center logoutbtn"><a href="./loadpage.html"><button type="submit" class="btn btn-dark">Home</button></a></div>
+  <div class="col-10"></div>
+  <div class="col-1 text-center logoutbtn"><button type="submit" class="btn btn-dark">Logout</button></div>
+
+</div>
+
+
+<div class="row row1">
+    <div class="col-12 titletext">Add Event
+    </div>
+    
+</div>
+
+<!-- row two title-->
+<div class="row row2 rowpad">
+    <div class="col-3"></div>
+    <div class="col-1 addeventheaders">Title: </div>
+    <div class="col-5 inputall">
+    <div class="input-group">
+      <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">Event</textarea></div> -->
+      <input type="text" class="stretch" id="titleinput" value="Title" onfocus="this.value=``">
+    </div>
+    <div class="col-3"></div>
+</div>
+
+<!-- row three assignee -->
+<!-- <div class="row row3 rowpad">
+    <div class="col-6">Assignee: </div>
+    <div class="col-6">Optional (you are defualt)</div>
+</div> -->
+
+<!-- row four start date-->
+<div class="row row4 rowpad">
+    <div class="col-3"></div>
+    <div class="col-1 startcol addeventheaders">Start Date: </div>
+    <div class="col-5 inputall">
+        <div class="input-group">
+          <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12/1/21</textarea></div> -->
+          <input type="date" class="stretch" id="dateinput" value="2021-10-10" onfocus="this.value=``">
+        </div>
+    <div class="col-3"></div>
+</div>
+
+<!-- row five end date-->
+<!-- <div class="row row5 rowpad">
+    <div class="col-6">End Date: </div>
+    <div class="col-6">Optional (only required for multiday event)</div>
+</div> -->
+
+<!-- row six start time-->
+<div class="row row6 rowpad">
+    <div class="col-3"></div>
+    <div class="col-1 startcol addeventheaders">Start Time: </div>
+    <div class="col-5 inputall">
+        <div class="input-group">
+          
+          <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12:00</textarea></div> -->
+          <input type="time" class="stretch" id="timeinput" value="12:00" onfocus="this.value=``">
+        </div>
+    <div class="col-3"></div>
+</div>
+
+<!-- row seven duration-->
+<div class="row row7 rowpad">
+    <div class="col-3"></div>
+    <div class="col-1 addeventheaders">Duration:  </div>
+    <div class="col-5 inputall">
+        <!-- <div class="dropright">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose an option
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">15 minutes</a>
+              <a class="dropdown-item" href="#">30 minutes</a>
+              <a class="dropdown-item" href="#">45 minutes</a>
+              <a class="dropdown-item" href="#">1hr</a>
+              <a class="dropdown-item" href="#">1hr 15 minutes</a>
+              <a class="dropdown-item" href="#">1hr 30 minutes</a>
+              <a class="dropdown-item" href="#">1hr 45 minutes</a>
+              <a class="dropdown-item" href="#">2hrs</a>
+              <a class="dropdown-item" href="#">2hrs 15 minutes</a>
+              <a class="dropdown-item" href="#">2hrs 30 minutes</a>
+              <a class="dropdown-item" href="#">2hrs 45 minutes</a>
+              <a class="dropdown-item" href="#">3hrs</a>
+              <a class="dropdown-item" href="#">3hrs 15 minutes</a>
+              <a class="dropdown-item" href="#">3hrs 30 minutes</a>
+              <a class="dropdown-item" href="#">3hrs 45 minutes</a>
+              <a class="dropdown-item" href="#">4hrs</a>
+            </div>
+          </div>  -->
+
+          <select class="form-control select1 btn-dark" id="sel1 durationinput" onfocus="this.value=``">
+            <option id="durationinput" value="15">15 minutes</option>
+            <option id="durationinput" value="30">30 minutes</option>
+            <option>45 minutes</option>
+            <option>1hr</option>
+            <option>1hr 15 minutes</option>
+            <option>1hr 30 minutes</option>
+            <option>1hr 45 minutes</option>
+            <option>2hrs</option>
+            <option>2hrs 15 minutes</option>
+            <option>2hrs 30 minutes</option>
+            <option>2hrs 45 minutes</option>
+            <option>3hrs</option>
+            <option>3hrs 15 minutes</option>
+            <option value="210">3hrs 30 minutes</option>
+            <option>3hrs 45 minutes</option>
+            <option>4hrs</option>
+          </select>
+        </div>
+        </div>
+    <div class="col-3"></div>
+</div>
+
+<!-- row eight repeat-->
+<div class="row row8 rowpad">
+    <div class="col-3"></div>
+    <div class="col-1 addeventheaders">Repeat: </div>
+    <div class="col-5 inputall">
+        <!-- <div class="dropright">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              Choose an option
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Every Day</a>
+              <a class="dropdown-item" href="#">Every Other day</a>
+              <a class="dropdown-item" href="#">Weekly</a>
+              <a class="dropdown-item" href="#">Bi-Weekly</a>
+              <a class="dropdown-item" href="#">Monthly</a>
+              <a class="dropdown-item" href="#">Every Two Months</a>
+              <a class="dropdown-item" href="#">Every Three Months</a>
+              <a class="dropdown-item" href="#">Every Four Months</a>
+              <a class="dropdown-item" href="#">Every Five Months</a>
+              <a class="dropdown-item" href="#">Every Six Months</a>
+              <a class="dropdown-item" href="#">Every Year</a>
+            </div>
+          </div>  -->
+
+            <select class="form-control select1 btn-dark" id="sel1 repeatinput">
+              <option class="option1">None</option>
+              <option class="option1">Every Day</option>
+              <option class="option1">Every Other day</option>
+              <option>Weekly</option>
+              <option>Bi-Weekly</option>
+              <option>Monthly</option>
+              <option>Every Two Months</option>
+              <option>Every Three Months</option>
+              <option>Every Four Months</option>
+              <option>Every Five Months</option>
+              <option>Every Six Months</option>
+              <option>Every Year</option>
+            </select>
+          </div>
+    <div class="col-3"></div>
+</div>
+
+<!-- row nine reminder-->
+<!-- <div class="row row9 rowpad">
+    <div class="col-6">Reminder: </div>
+    <div class="col-6">Optional (default is NONE, no reminder)</div>
+</div> -->
+
+<!-- row ten description text area-->
+<div class="row row10">
+    <div class="col-12 descriptionhere">DESCRIPTION:</div></div>
+
+    <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+    <div class="input-group descriptioninput">
+        <textarea class="form-control" aria-label="With textarea" onfocus="this.value=``">Don't Forget!</textarea>
+      </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+
+<div class="row">
+    <div class="col-5"></div>
+    <div class="col-2 savebtn">
+    <button class="btn btn-dark savebtn" onclick="getTimeInput(), getDateInput(), getDurationInput()">SAVE</button>   
+    </div>
+    <div class="col-5"></div>
+
+</div>
+
+<script src="./js/addevent.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>
