@@ -3,14 +3,14 @@ module.exports =
   "development": {
     "username": "root",
     "password": process.env.myPassword,
-    "database": "rotesast_event_db",
+    "database": "dbEvents",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": process.env.myPassword,
-    "database": "rotesast_event_db_test",
+    "database": "dbEvents_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
