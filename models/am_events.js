@@ -7,13 +7,13 @@ module.exports = (sequelize, DataTypes) => {
         len: [1]
       }
     },
-    assignee: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        len: [1]
-      }
-    },
+    // assignee: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    //   validate: {
+    //     len: [1]
+    //   }
+    // },
     start_date: {
       type: DataTypes.DATEONLY,
       allowNull: false,
@@ -29,18 +29,18 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    end_date: {
-      type: DataTypes.DATEONLY,
-      allowNull: true
-    },
+    // end_date: {
+    //   type: DataTypes.DATEONLY,
+    //   allowNull: true
+    // },
     repeat_cycle: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    reminder: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
+    // reminder: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true
+    // },
     description: {
       type: DataTypes.TEXT,
       allowNull: true
