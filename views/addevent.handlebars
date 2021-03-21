@@ -1,74 +1,77 @@
 <!-- row one (title and save button) -->
 <!-- FIX ALIGN ISSUE -->
-<div class="row">
-  <div class="col-1 text-center"><a href="/loadpage"><button type="submit" class="btn btn-dark logoutbtn">Home</button></a></div>
-  <div class="col-10"></div>
-  <div class="col-1 text-center"><a href="/logout"><button type="submit" class="btn btn-dark logoutbtn">Logout</button></a></div>
+<div class="container">
+  <div class="row">
+    <div class="col-1 text-center"><a href="/loadpage"><button type="submit"
+          class="btn btn-dark logoutbtn">Home</button></a></div>
+    <div class="col-10"></div>
+    <div class="col-1 text-center"><a href="/logout"><button type="submit"
+          class="btn btn-dark logoutbtn">Logout</button></a></div>
 
-</div>
+  </div>
 
+  <div class="event-form">
+    <div class="row row1">
+      <div class="col-12 titletext">Add Event
+      </div>
 
-<div class="row row1">
-    <div class="col-12 titletext">Add Event
     </div>
-    
-</div>
 
-<!-- row two title-->
-<div class="row row2 rowpad">
-    <div class="col-3"></div>
-    <div class="col-1 addeventheaders">Title: </div>
-    <div class="col-5 inputall">
-    <div class="input-group">
-      <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">Event</textarea></div> -->
-      <input type="text" class="stretch" id="titleinput" value="Title" >
-    </div>
-    <div class="col-3"></div>
-</div>
+    <!-- row two title-->
+    <div class="row row2 rowpad">
+      <div class="col-3"></div>
+      <div class="col-1 addeventheaders">Title: </div>
+      <div class="col-5 inputall">
+        <div class="input-group">
+          <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">Event</textarea></div> -->
+          <input type="text" class="stretch" id="titleinput" value="Title">
+        </div>
+        <div class="col-3"></div>
+      </div>
 
-<!-- row three assignee -->
-<!-- <div class="row row3 rowpad">
+      <!-- row three assignee -->
+      <!-- <div class="row row3 rowpad">
     <div class="col-6">Assignee: </div>
     <div class="col-6">Optional (you are defualt)</div>
-</div> -->
+    </div> -->
 
-<!-- row four start date-->
-<div class="row row4 rowpad">
-    <div class="col-3"></div>
-    <div class="col-1 startcol addeventheaders">Start Date: </div>
-    <div class="col-5 inputall">
-        <div class="input-group">
-          <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12/1/21</textarea></div> -->
-          <input type="date" class="stretch" id="dateinput" value="2021-01-01" onfocus="this.value=``">
+      <!-- row four start date-->
+      <div class="row row4 rowpad">
+        <div class="col-3"></div>
+        <div class="col-1 startcol addeventheaders">Start Date: </div>
+        <div class="col-5 inputall">
+          <div class="input-group">
+            <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12/1/21</textarea></div> -->
+            <input type="date" class="stretch" id="dateinput" value="2021-01-01" onfocus="this.value=``">
+          </div>
+          <div class="col-3"></div>
         </div>
-    <div class="col-3"></div>
-</div>
 
-<!-- row five end date-->
-<!-- <div class="row row5 rowpad">
-    <div class="col-6">End Date: </div>
-    <div class="col-6">Optional (only required for multiday event)</div>
-</div> -->
+        <!-- row five end date-->
+        <!-- <div class="row row5 rowpad">
+        <div class="col-6">End Date: </div>
+        <div class="col-6">Optional (only required for multiday event)</div>
+      </div> -->
 
-<!-- row six start time-->
-<div class="row row6 rowpad">
-    <div class="col-3"></div>
-    <div class="col-1 startcol addeventheaders">Start Time: </div>
-    <div class="col-5 inputall">
-        <div class="input-group">
-          
-          <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12:00</textarea></div> -->
-          <input type="time" class="stretch" id="timeinput" value="12:00" onfocus="this.value=``">
-        </div>
-    <div class="col-3"></div>
-</div>
+        <!-- row six start time-->
+        <div class="row row6 rowpad">
+          <div class="col-3"></div>
+          <div class="col-1 startcol addeventheaders">Start Time: </div>
+          <div class="col-5 inputall">
+            <div class="input-group">
 
-<!-- row seven duration-->
-<div class="row row7 rowpad">
-    <div class="col-3"></div>
-    <div class="col-1 addeventheaders">Duration:  </div>
-    <div class="col-5 inputall">
-        <!-- <div class="dropright">
+              <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12:00</textarea></div> -->
+              <input type="time" class="stretch" id="timeinput" value="12:00" onfocus="this.value=``">
+            </div>
+            <div class="col-3"></div>
+          </div>
+
+          <!-- row seven duration-->
+          <div class="row row7 rowpad">
+            <div class="col-3"></div>
+            <div class="col-1 addeventheaders">Duration: </div>
+            <div class="col-5 inputall">
+              <!-- <div class="dropright">
             <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Choose an option
             </button>
@@ -92,35 +95,35 @@
             </div>
           </div>  -->
 
-          <select class="form-control select1 btn-dark" id="sel1 durationinput" onfocus="this.value=``">
-            <option id="durationinput" value="15">15 minutes</option>
-            <option id="durationinput" value="30">30 minutes</option>
-            <option id="durationinput" value="45">45 minutes</option>
-            <option id="durationinput" value="60">1hr</option>
-            <option id="durationinput" value="75">1hr 15 minutes</option>
-            <option id="durationinput" value="90">1hr 30 minutes</option>
-            <option id="durationinput" value="105">1hr 45 minutes</option>
-            <option id="durationinput" value="120">2hrs</option>
-            <option id="durationinput" value="135">2hrs 15 minutes</option>
-            <option id="durationinput" value="150">2hrs 30 minutes</option>
-            <option id="durationinput" value="165">2hrs 45 minutes</option>
-            <option id="durationinput" value="180">3hrs</option>
-            <option id="durationinput" value="195">3hrs 15 minutes</option>
-            <option id="durationinput" value="210">3hrs 30 minutes</option>
-            <option id="durationinput" value="225">3hrs 45 minutes</option>
-            <option id="durationinput" value="240">4hrs</option>
-          </select>
+              <select class="form-control select1 btn-dark" id="sel1 durationinput" onfocus="this.value=``">
+                <option id="durationinput" value="15">15 minutes</option>
+                <option id="durationinput" value="30">30 minutes</option>
+                <option id="durationinput" value="45">45 minutes</option>
+                <option id="durationinput" value="60">1hr</option>
+                <option id="durationinput" value="75">1hr 15 minutes</option>
+                <option id="durationinput" value="90">1hr 30 minutes</option>
+                <option id="durationinput" value="105">1hr 45 minutes</option>
+                <option id="durationinput" value="120">2hrs</option>
+                <option id="durationinput" value="135">2hrs 15 minutes</option>
+                <option id="durationinput" value="150">2hrs 30 minutes</option>
+                <option id="durationinput" value="165">2hrs 45 minutes</option>
+                <option id="durationinput" value="180">3hrs</option>
+                <option id="durationinput" value="195">3hrs 15 minutes</option>
+                <option id="durationinput" value="210">3hrs 30 minutes</option>
+                <option id="durationinput" value="225">3hrs 45 minutes</option>
+                <option id="durationinput" value="240">4hrs</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-3"></div>
         </div>
-        </div>
-    <div class="col-3"></div>
-</div>
 
-<!-- row eight repeat-->
-<div class="row row8 rowpad">
-    <div class="col-3"></div>
-    <div class="col-1 addeventheaders">Repeat: </div>
-    <div class="col-5 inputall">
-        <!-- <div class="dropright">
+        <!-- row eight repeat-->
+        <div class="row row8 rowpad">
+          <div class="col-3"></div>
+          <div class="col-1 addeventheaders">Repeat: </div>
+          <div class="col-5 inputall">
+            <!-- <div class="dropright">
             <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               Choose an option
             </button>
@@ -153,35 +156,38 @@
               <option class="option1" value="365">Every Year</option>
             </select>
           </div>
-    <div class="col-3"></div>
-</div>
+          <div class="col-3"></div>
+        </div>
 
-<!-- row nine reminder-->
-<!-- <div class="row row9 rowpad">
+        <!-- row nine reminder-->
+        <!-- <div class="row row9 rowpad">
     <div class="col-6">Reminder: </div>
     <div class="col-6">Optional (default is NONE, no reminder)</div>
-</div> -->
+    </div> -->
 
-<!-- row ten description text area-->
-<div class="row row10">
-    <div class="col-12 descriptionhere">DESCRIPTION:</div></div>
+        <!-- row ten description text area-->
+        <div class="row row10">
+          <div class="col-12 descriptionhere">DESCRIPTION:</div>
+        </div>
 
-    <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">
-    <div class="input-group descriptioninput">
-        <textarea class="form-control" aria-label="With textarea" onfocus="this.value=``">Don't Forget!</textarea>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="input-group" id="descriptioninput">
+              <textarea class="form-control" aria-label="With textarea" onfocus="this.value=``">Don't Forget!</textarea>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-5"></div>
+          <div class="col-2 savebtn">
+            <a href="/viewEvent"><button class="btn btn-dark savebtn"
+                onclick="getTimeInput(), getDateInput(), getDurationInput()">SAVE</button></a>
+          </div>
+          <div class="col-5"></div>
+        </div>
       </div>
     </div>
-    <div class="col-3"></div>
-</div>
-
-
-<div class="row">
-    <div class="col-5"></div>
-    <div class="col-2 savebtn">
-    <a href="/viewEvent"><button class="btn btn-dark savebtn" onclick="getTimeInput(), getDateInput(), getDurationInput()">SAVE</button></a>
-    </div>
-    <div class="col-5"></div>
-
-</div>
