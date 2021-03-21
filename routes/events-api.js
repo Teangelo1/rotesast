@@ -50,7 +50,7 @@ module.exports = (app) => {
       where: {
         id: req.params.id,
       },
-    }).then((dbEvents) => res.json(dbEvents));
+    }).then((dbevents) => res.json(dbevents));
   });
 
   // PUT route for updating posts
@@ -59,6 +59,6 @@ module.exports = (app) => {
       where: {
         id: req.body.id,
       },
-    }).then((dbEvents) => res.json(dbEvents));
+    }).then((dbevents) => res.json(dbevents));
   });
 };
