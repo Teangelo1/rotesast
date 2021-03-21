@@ -142,8 +142,9 @@
             </div>
           </div>  -->
 
-            <select class="form-control select1 btn-dark" id="sel1 repeatinput">
-              <option class="option1" value="">None</option>
+            {{!-- used "sel1" as an ID, do you still need? --}}
+            <select class="form-control select1 btn-dark" id="repeatinput">
+              <option class="option1" value="0">None</option>
               <option class="option1" value="1">Every Day</option>
               <option class="option1" value="2">Every Other day</option>
               <option class="option1" value="7">Weekly</option>
@@ -173,8 +174,8 @@
         <div class="row">
           <div class="col-3"></div>
           <div class="col-6">
-            <div class="input-group" id="descriptioninput">
-              <textarea class="form-control" aria-label="With textarea" onfocus="this.value=``">Don't Forget!</textarea>
+            <div class="input-group">
+              <textarea id="descriptioninput" class="form-control" aria-label="With textarea" onfocus="this.value=``">Don't Forget!</textarea>
             </div>
           </div>
           <div class="col-3"></div>
@@ -184,8 +185,7 @@
         <div class="row">
           <div class="col-5"></div>
           <div class="col-2 savebtn">
-            <a href="/viewEvent"><button class="btn btn-dark savebtn"
-                onclick="getTimeInput(), getDateInput(), getDurationInput()">SAVE</button></a>
+            <a href=""><button id="saveEventBtn"class="btn btn-dark savebtn">SAVE</button></a>
           </div>
           <div class="col-5"></div>
         </div>
