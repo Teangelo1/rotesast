@@ -1,4 +1,4 @@
-// commented out by steve 3-21-21 --------------------------------------------------STOP
+// commented out by steve 3-21-21 -------------------------------------------START
 //making sure we wait to attache our handlers until the DOM is fully loaded
 // document.addEventListener('DOMContentLoaded', (e) => {
 //     if (e) {
@@ -6,38 +6,52 @@
 //     }
 // //just following the pattern here from Burger HW. Not sure if event-container should go here
 // })
+// commented out by steve 3-21-21 -------------------------------------------STOP
 // create
-$(document).ready(function () {
-
+$(document).ready(function() {
   const saveEventBtn = document.getElementById("saveEventBtn");
   if (saveEventBtn) {
     saveEventBtn.addEventListener("click", (e) => {
       e.preventDefault();
 
-      console.log("click event works on save btn")
+      console.log("click event works on save btn"); // this works steve 3-21-21-6pm
 
       //constructing the event based on the input of the form.
       const Events = {
         title: document.getElementById("titleinput").value.trim(),
-        start_date: document.getElementById("timeinput").value,
+        start_date: document.getElementById("dateinput").value,
         start_time: document.getElementById("timeinput").value,
         duration: document.getElementById("durationinput").value,
         repeat_cycle: document.getElementById("repeatinput").value,
         description: document.getElementById("descriptioninput").value.trim()
       };
 
-      //create events for handlebars format
-      const events = (Events) => {
-        fetch("/api/events", {
-          method: "POST",
-          headers: { "Content-Type": "aplication/json" },
-          body: JSON.stringify(Events)
-        })
-          //grabbint them to post?
-          .then(results => console.log(results))
-          .catch((err) => console.error(err));
-      };
+      console.log(Events); // this works steve 3-21-21-6pm
 
+      fetch('/api/events', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Events),
+        // body: Events,
+      })
+        .then( console.log("then from api/events"));
+   
+      // commented out by steve 3-21-21 6pm---------------------------------------START
+      //create events for handlebars format
+      // const events = (Events) => {
+      //   fetch("/api/events", {
+      //     method: "POST",
+      //     headers: { "Content-Type": "aplication/json" },
+      //     body: JSON.stringify(Events)
+      //   })
+      //     //grabbint them to post?
+      //     .then((results) => console.log(results))
+      //     .catch((err) => console.error(err));
+      // };
+      // commented out by steve 3-21-21 6pm----------------------------------------STOP
+  
       //I am getting stuck here
       // Grab all events to post in handle bars
       const getEvents = () => {
@@ -60,7 +74,7 @@ $(document).ready(function () {
     });
   }
 });
-// commented out by steve 3-21-21 --------------------------------------------------STOP
+
 //function to grab events from the database
 
 //this is what Robert set up let's see if we can do it in a shorter route like above
