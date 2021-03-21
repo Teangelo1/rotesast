@@ -21,7 +21,7 @@
     <div class="col-5 inputall">
     <div class="input-group">
       <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">Event</textarea></div> -->
-      <input type="text" class="stretch" id="titleinput" value="Title" onfocus="this.value=``">
+      <input type="text" class="stretch" id="titleinput" value="Title" >
     </div>
     <div class="col-3"></div>
 </div>
@@ -39,7 +39,7 @@
     <div class="col-5 inputall">
         <div class="input-group">
           <!-- <textarea class="form-control titleinput" aria-label="With textarea" onfocus="this.value=``">12/1/21</textarea></div> -->
-          <input type="date" class="stretch" id="dateinput" value="2021-10-10" onfocus="this.value=``">
+          <input type="date" class="stretch" id="dateinput" value="2021-1-1" onfocus="this.value=``">
         </div>
     <div class="col-3"></div>
 </div>
@@ -95,20 +95,20 @@
           <select class="form-control select1 btn-dark" id="sel1 durationinput" onfocus="this.value=``">
             <option id="durationinput" value="15">15 minutes</option>
             <option id="durationinput" value="30">30 minutes</option>
-            <option>45 minutes</option>
-            <option>1hr</option>
-            <option>1hr 15 minutes</option>
-            <option>1hr 30 minutes</option>
-            <option>1hr 45 minutes</option>
-            <option>2hrs</option>
-            <option>2hrs 15 minutes</option>
-            <option>2hrs 30 minutes</option>
-            <option>2hrs 45 minutes</option>
-            <option>3hrs</option>
-            <option>3hrs 15 minutes</option>
-            <option value="210">3hrs 30 minutes</option>
-            <option>3hrs 45 minutes</option>
-            <option>4hrs</option>
+            <option id="durationinput" value="45">45 minutes</option>
+            <option id="durationinput" value="60">1hr</option>
+            <option id="durationinput" value="75">1hr 15 minutes</option>
+            <option id="durationinput" value="90">1hr 30 minutes</option>
+            <option id="durationinput" value="105">1hr 45 minutes</option>
+            <option id="durationinput" value="120">2hrs</option>
+            <option id="durationinput" value="135">2hrs 15 minutes</option>
+            <option id="durationinput" value="150">2hrs 30 minutes</option>
+            <option id="durationinput" value="165">2hrs 45 minutes</option>
+            <option id="durationinput" value="180">3hrs</option>
+            <option id="durationinput" value="195">3hrs 15 minutes</option>
+            <option id="durationinput" value="210">3hrs 30 minutes</option>
+            <option id="durationinput" value="225">3hrs 45 minutes</option>
+            <option id="durationinput" value="240">4hrs</option>
           </select>
         </div>
         </div>
@@ -140,18 +140,17 @@
           </div>  -->
 
             <select class="form-control select1 btn-dark" id="sel1 repeatinput">
-              <option class="option1">None</option>
-              <option class="option1">Every Day</option>
-              <option class="option1">Every Other day</option>
-              <option>Weekly</option>
-              <option>Bi-Weekly</option>
-              <option>Monthly</option>
-              <option>Every Two Months</option>
-              <option>Every Three Months</option>
-              <option>Every Four Months</option>
-              <option>Every Five Months</option>
-              <option>Every Six Months</option>
-              <option>Every Year</option>
+              <option class="option1" value="">None</option>
+              <option class="option1" value="1">Every Day</option>
+              <option class="option1" value="2">Every Other day</option>
+              <option class="option1" value="7">Weekly</option>
+              <option class="option1" value="30">Monthly</option>
+              <option class="option1" value="60">Every Two Months</option>
+              <option class="option1" value="90">Every Three Months</option>
+              <option class="option1" value="120">Every Four Months</option>
+              <option class="option1" value="150">Every Five Months</option>
+              <option class="option1" value="180">Every Six Months</option>
+              <option class="option1" value="365">Every Year</option>
             </select>
           </div>
     <div class="col-3"></div>

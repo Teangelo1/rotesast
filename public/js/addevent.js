@@ -18,7 +18,7 @@ function getDateInput() {
 }
 
 function getDurationInput() {
-    var durationInput = document.getElementById("durationinput").selectedIndex = 0;
+    var durationInput = document.getElementById("durationinput").value;
     console.log(durationInput)
     return durationInput
 }
