@@ -31,18 +31,20 @@ module.exports = (app) => {
 
   // POST route for saving a new post
   app.post("/api/events", (req, res) => {
+    console.log("app post route fired");
     console.log(req.body);
-    db.Events.create({
-      title: req.body.title,
-      // assignee: req.body.assignee,
-      start_date: req.body.start_date,
-      start_time: req.body.start_time,
-      duration: req.body.duration,
-      // end_date: req.body.end_date,
-      repeat_cycle: req.body.repeat_cycle,
-      description: req.body.description
-    }).then((dbEvents) => res.json(dbEvents));
-  });
+    // db.Events.create({
+    //   title: req.body.title,
+    //   // assignee: req.body.assignee,
+    //   start_date: req.body.start_date,
+    //   start_time: req.body.start_time,
+    //   duration: req.body.duration,
+    //   // end_date: req.body.end_date,
+    //   repeat_cycle: req.body.repeat_cycle,
+    //   description: req.body.description
+  })
+  //.then((dbEvents) => res.json(dbEvents)); // had to comment this out to get it to load.. Not sure what is wrong. 
+
 
   // DELETE route for deleting posts
   app.delete("/api/events/:id", (req, res) => {
