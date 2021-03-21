@@ -39,17 +39,18 @@ module.exports = (app) => {
     console.log("events-api.js app post route fired");
     console.log(req.body);
     // steve commented this out until the consolelog shows the object ready to push into data base. 3-21-21-6pm Start
-    // db.Events.create({
-    //   title: req.body.title,
-    //   // assignee: req.body.assignee,
-    //   start_date: req.body.start_date,
-    //   start_time: req.body.start_time,
-    //   duration: req.body.duration,
-    //   // end_date: req.body.end_date,
-    //   repeat_cycle: req.body.repeat_cycle,
-    //   description: req.body.description
+    db.Events.create({
+      title: req.body.title,
+      // assignee: req.body.assignee,
+      start_date: req.body.start_date,
+      start_time: req.body.start_time,
+      duration: req.body.duration,
+      // end_date: req.body.end_date,
+      repeat_cycle: req.body.repeat_cycle,
+      description: req.body.description
     // steve commented this out until the consolelog shows the object ready to push into data base. 3-21-21-6pm Stop
   })
+})
   //.then((dbEvents) => res.json(dbEvents)); // had to comment this out to get it to load.. Not sure what is wrong. 
 
 
