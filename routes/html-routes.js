@@ -3,6 +3,7 @@ const path = require("path");
 
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+const db = require("../models");
 
 module.exports = function(app) {
   app.get("/", (req, res) => {
@@ -32,7 +33,13 @@ module.exports = function(app) {
   });
 
   app.get("/viewEvent", isAuthenticated, (req, res) => {
-    res.render("viewEvents");
+    db.Events.findAll({}).then((dbEvents) => {
+      console.log(JSON.parse(JSON.stringify(dbEvents)))
+      res.render("viewEvents",{
+  
+      events: JSON.parse(JSON.stringify(dbEvents))
+    })});
+    
   });
 
   app.get("/loadpage", isAuthenticated, (req, res) => {
