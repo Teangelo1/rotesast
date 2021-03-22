@@ -4,22 +4,11 @@ const db = require("../models");
 // Routes
 // =============================================================
 module.exports = (app) => {
-  // GET route for getting all of the posts
-
-  // commented out by steve -----------------3-21-21 6pm START, updated 8pm changed events to viewevent
-  app.get("api/viewEvents", (req, res) => {
-    db.Events.findAll({
-      include: [db.events]
-    })
-    .then(
-      console.log(res)
-      console.log("database get response")
-      )
-    //.then((dbevents) => res.json(dbevents)); // 3-21-21-8pm commented out to see if it works
-    // pretty sure this should be events(table)... not dbevents(database)...
+  console.log("Helllllllllloooooooooo")
+  app.get("/api/viewEvent", (req, res) => {
+    db.Events.findAll({}).then((dbEvents) => res.json(dbEvents));
   });
-  // commented out by steve -----------------3-21-21 6pm STOP
-
+  
   //don't think we are doing this but will save here incase
   //   // Get route for returning posts of a specific category
   //   app.get('/api/events/category/:category', (req, res) => {
