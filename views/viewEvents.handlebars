@@ -14,8 +14,10 @@
 <div class="row row1">
     <div class="col-12 titletext">Events
     </div>
+       {{ log events}}
                 <table class="table table-striped">
                     <thead>
+            
                         <tr>
                             <th>Title:</th>
                             <th>Start Date: </th>
@@ -24,14 +26,29 @@
                             <th>Repeat:</th>
                         </tr>
                     </thead>
+                    {{!-- <div class="row">
                     <tbody>
-                        <tr id="form-row">
+                        <div id="form-row">
                             {{#each events}}
-                            {{>amnesia/add-block.handlebars}}
-                            {{/each}}
-                        </tr>
+                        
+                            {{!-- {{>amnesia/add-block.handlebars}} --}}
+                          
+                        {{!-- </div>
                     </tbody>
-                </table>
+                    </div>  --}}
+                    </table>
+
+
+  
+<div class = "row align-items-start">
+<div class="col-6 left">
+<ul class="list">
+  {{#each events}}
+  {{> amnesia/add-block}}
+  {{/each}}
+</ul>
+</div>
+
             </div>
         </div>
     </div>
