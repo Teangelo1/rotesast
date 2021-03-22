@@ -1,6 +1,5 @@
 <!-- row one (title and save button) -->
 <!-- FIX ALIGN ISSUE -->
-<div class="container">
   <div class="row">
     <div class="col-1 text-center"><a href="/loadpage"><button type="submit"
           class="btn btn-dark logoutbtn">Home</button></a></div>
@@ -95,7 +94,7 @@
             </div>
           </div>  -->
 
-              <select class="form-control select1 btn-dark" id="sel1 durationinput" onfocus="this.value=``">
+              <select class="form-control select1 btn-dark" id="durationinput" onfocus="this.value=``">
                 <option id="durationinput" value="15">15 minutes</option>
                 <option id="durationinput" value="30">30 minutes</option>
                 <option id="durationinput" value="45">45 minutes</option>
@@ -174,24 +173,25 @@
         <div class="row">
           <div class="col-3"></div>
           <div class="col-6">
-            <div class="input-group">
+            <div class="input-group descriptiontextbox">
               <textarea id="descriptioninput" class="form-control" aria-label="With textarea"
                 onfocus="this.value=``">Don't Forget!</textarea>
             </div>
           </div>
           <div class="col-3"></div>
         </div>
+        
 
 
         <div class="row">
           <div class="col-5"></div>
             <div class="col-2 savebtn">
-              <a href=""><button id="saveEventBtn" class="btn btn-dark savebtn">SAVE</button></a>
+              <a href="/viewEvent"><button type="submit" id="saveEventBtn" class="btn btn-dark savebtn">SAVE</button></a>
+              {{!-- <a href="/viewEvent"><button type="submit" id="saveEventBtn" class="btn btn-dark savebtn">SAVE</button></a> --}}
+              <a href="/viewEvent"><button type="submit" class="btn btn-dark savebtn">View Events</button></a>
             </div>
-            <div class="col-4">
-              <a href="/viewEvent"><button type="submit" class="btn btn-dark homebuttons">View Events</button></a>
-            </div>
+
           <div class="col-5"></div>
         </div>
-      </div>
-    </div>
+      {{!-- </div>
+    </div> --}}
