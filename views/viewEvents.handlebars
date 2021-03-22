@@ -26,6 +26,9 @@
                     </thead>
                     <tbody>
                         <tr id="form-row">
+                            {{#each events}}
+                            {{>amnesia/add-block.handlebars}}
+                            {{/each}}
                         </tr>
                     </tbody>
                 </table>

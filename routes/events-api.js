@@ -5,12 +5,19 @@ const db = require("../models");
 // =============================================================
 module.exports = (app) => {
   // GET route for getting all of the posts
-  
-  // commented out by steve -----------------3-21-21 6pm START
-  // app.get("api/events/", (req, res) => {
-  //   db.Events.findAll({}).then((dbEvents) => res.json(dbEvents));
-  //   // pretty sure this should be events(table)... not dbevents(database)... 
-  // });
+
+  // commented out by steve -----------------3-21-21 6pm START, updated 8pm changed events to viewevent
+  app.get("api/viewEvents", (req, res) => {
+    db.Events.findAll({
+      include: [db.events]
+    })
+    .then(
+      console.log(res)
+      console.log("database get response")
+      )
+    //.then((dbevents) => res.json(dbevents)); // 3-21-21-8pm commented out to see if it works
+    // pretty sure this should be events(table)... not dbevents(database)...
+  });
   // commented out by steve -----------------3-21-21 6pm STOP
 
   //don't think we are doing this but will save here incase
@@ -48,27 +55,26 @@ module.exports = (app) => {
       // end_date: req.body.end_date,
       repeat_cycle: req.body.repeat_cycle,
       description: req.body.description
-    // steve commented this out until the consolelog shows the object ready to push into data base. 3-21-21-6pm Stop
-  })
-})
-  //.then((dbEvents) => res.json(dbEvents)); // had to comment this out to get it to load.. Not sure what is wrong. 
-
+      // steve commented this out until the consolelog shows the object ready to push into data base. 3-21-21-6pm Stop
+    });
+  });
+  //.then((dbEvents) => res.json(dbEvents)); // had to comment this out to get it to load.. Not sure what is wrong.
 
   // DELETE route for deleting posts
   app.delete("/api/events/:id", (req, res) => {
     db.Events.destroy({
       where: {
-        id: req.params.id,
-      },
-    }).then((dbevents) => res.json(dbevents));
+        id: req.params.id
+      }
+    }).then((events) => res.json(events)); // steve 3-21-21 -824pm changed from dbevents to events
   });
 
   // PUT route for updating posts
   app.put("/api/events", (req, res) => {
     db.Events.update(req.body, {
       where: {
-        id: req.body.id,
-      },
-    }).then((dbevents) => res.json(dbevents));
+        id: req.body.id
+      }
+    }).then((events) => res.json(events)); // steve 3-21-21 -824pm changed from dbevents to events
   });
 };
