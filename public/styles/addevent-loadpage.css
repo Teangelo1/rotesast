@@ -160,11 +160,17 @@ text-align: center;
   }
 
   .largefont {
-      font-size: 22pt;
-      font-weight: 900;
+    font-family: 'DatalegreyaGradient';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24pt;
   }
 
   .rowshift {
       padding-left: .45cm;
       padding-right: 0cm;
+      border-top: 0pt;
+      border-left: 0pt;
+      border-right: 0pt;
+      border-style: solid;
   }
