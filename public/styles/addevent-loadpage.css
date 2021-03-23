@@ -140,3 +140,41 @@ width: 11vw;
     float: right;
     margin-right: .9cm;
 }
+
+.list {
+    list-style-type: none;
+    font-size: 20pt;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .center {
+      text-align: center;
+      width: 100%;
+  }
+
+  .listtext {
+padding: 0cm;
+margin: .27cm;
+text-align: center;
+  }
+
+  .largefont {
+    font-family: 'DatalegreyaGradient';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24pt;
+  }
+
+  .rowshift {
+      padding-left: .45cm;
+      padding-right: 0cm;
+      border-top: 0pt;
+      border-left: 0pt;
+      border-right: 0pt;
+      border-style: solid;
+  }
+
+  .buttontop {
+      margin-top: .25cm;
+  }

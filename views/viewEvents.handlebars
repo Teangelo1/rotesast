@@ -15,17 +15,16 @@
     <div class="col-12 titletext">Events
     </div>
        {{ log events}}
+       <div class="row rowshift">
+           <div class="col-2 listtext largefont">Title</div>
+           <div class="col-2 listtext largefont">Start Date</div>
+           <div class="col-2 listtext largefont">Start Time</div>
+           <div class="col-2 listtext largefont">Duration</div>
+           <div class="col-2 listtext largefont">Repeat</div>
+           <div class="col-2 listtext largefont"></div>
+       </div>
                 <table class="table table-striped">
-                    <thead>
-            
-                        <tr>
-                            <th>Title:</th>
-                            <th>Start Date: </th>
-                            <th>Start Time: </th>
-                            <th>Duration: </th>
-                            <th>Repeat:</th>
-                        </tr>
-                    </thead>
+
                     {{!-- <div class="row">
                     <tbody>
                         <div id="form-row">
@@ -40,8 +39,7 @@
 
 
   
-<div class = "row align-items-start">
-<div class="col-6 left">
+<div class = "center">
 <ul class="list">
   {{#each events}}
   {{> amnesia/add-block}}
@@ -49,7 +47,7 @@
 </ul>
 </div>
 
-            </div>
+
         </div>
     </div>
 
