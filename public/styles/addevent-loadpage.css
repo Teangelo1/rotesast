@@ -140,3 +140,31 @@ width: 11vw;
     float: right;
     margin-right: .9cm;
 }
+
+.list {
+    list-style-type: none;
+    font-size: 20pt;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .center {
+      text-align: center;
+      width: 100%;
+  }
+
+  .listtext {
+padding: 0cm;
+margin: .32cm;
+text-align: center;
+  }
+
+  .largefont {
+      font-size: 22pt;
+      font-weight: 900;
+  }
+
+  .rowshift {
+      padding-left: .45cm;
+      padding-right: 0cm;
+  }
