@@ -3,12 +3,12 @@
     <div class="col-2 listtext">{{this.title}}</div> 
     <div class="col-2 listtext">{{this.start_date}}</div>
     <div class="col-2 listtext">{{this.start_time}}</div>
-    <div class="col-2 listtext">{{this.duration}}</div>
-    <div class="col-2 listtext">{{this.repeat_cycle}}</div>
+    <div class="col-2 listtext">{{this.duration}} minutes</div>
+    <div class="col-2 listtext">Every {{this.repeat_cycle}} days</div>
     
 
-    {{!-- <div class="col-2 listtext"><button type="button" class="btn btn-dark" data-id="{{this.id}}">Delete</button>
-     <button type="button" class="btn btn-dark" data-id="{{this.id}}">Export</button>
-     </div> --}}
+    <div class="col-1 buttontop"><button type="button" class="btn btn-dark" data-id="{{this.id}}">Export</button>
+     {{!-- <button type="button" class="btn btn-dark" data-id="{{this.id}}">Export</button> --}}
+     </div>
     </div>
 </li>

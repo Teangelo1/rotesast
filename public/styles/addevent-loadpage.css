@@ -155,7 +155,7 @@ width: 11vw;
 
   .listtext {
 padding: 0cm;
-margin: .32cm;
+margin: .27cm;
 text-align: center;
   }
 
@@ -173,4 +173,8 @@ text-align: center;
       border-left: 0pt;
       border-right: 0pt;
       border-style: solid;
+  }
+
+  .buttontop {
+      margin-top: .25cm;
   }
