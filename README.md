@@ -21,7 +21,13 @@ No installation is necessary, the app functions over heroku. <br/>
 <br/>
 <br/>
 ## Usage <br/>
-Upon loading, the user will be greeted with a "sign up" page. Here the user will be required to enter a valid email address and a password for login. Upon signing up, the user will be redirected to the "Amnesia(NULL)" page as shown below. Here, the user can choose from three options as follows: "Logout"(Top Left), "Add Event"(Middle Left), and "View Events"(Middle Right). The user can choose "Add Event". The following page will populate. The form can be filled out to create a reminder within the database. Once finished, the user should click "Save". Afterwards, "View Event" can be clicked and will display all entries made on previous page. Lastly, export will create an ".ics" file locally on the users computer. From here, the file can be imported into your favorite calander application. The user can logout at any point utilizing the "logout" button at the top right of any screen.  <br/>
+Upon loading, the user will be greeted with a "sign up" page. Here the user will be required to enter a valid email address and a password for login. Upon signing up, the user will be redirected to the "Amnesia(NULL)" page as shown below. <br/>
+![Homepage](https://user-images.githubusercontent.com/73792987/112404994-cc6d9600-8ce7-11eb-8bb4-9b074df69040.PNG) <br/>
+Here, the user can choose from three options as follows: "Logout"(Top Left), "Add Event"(Middle Left), and "View Events"(Middle Right). The user can choose "Add Event". The following page will populate. <br/>
+![Add Event](https://user-images.githubusercontent.com/73792987/112405008-d394a400-8ce7-11eb-851d-e8f47d5fcdf2.PNG) <br/>
+The form can be filled out to create a reminder within the database. Once finished, the user should click "Save". Afterwards, "View Event" can be clicked and will display all entries made on previous page as follows. <br/>
+![View Events](https://user-images.githubusercontent.com/73792987/112405018-d98a8500-8ce7-11eb-9d41-0563a3353810.PNG)
+Once here, export will create an ".ics" file locally on the users computer. From here, the file can be imported into your favorite calander application. The user can logout at any point utilizing the "logout" button at the top right of any screen.  <br/>
 <br/>
 <br/>
 ## License <br/>
@@ -45,19 +51,19 @@ None <br/>
 <br/>
 ## Questions <br/>
 Should any questions arise, please contact me at: <br/>
-Robert Sunde:
+Robert Sunde: <br/>
 Github: www.github.com/robertsunde <br/>
 Email: robertsundeMSU@gmail.com <br/>
 
-Teangelo Burks
+Teangelo Burks <br/>
 Github: www.github.com/Teangelo1 <br/>
 Email:burks.teangelo@gmail.com <br/>
 
-Steve Black
+Steve Black <br/>
 Github: www.github.com/SteveBecmpe <br/>
 Email: steveblackecmpe@gmail.com <br/>
 
-Sara Taylor
+Sara Taylor <br/>
 Github: www.github.com/SaraSwifti <br/>
 Email: sara.swifti@gmail.com <br/>
 
