@@ -4,6 +4,12 @@ const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
 
+//npm so require works client/browser side. ----------------------------Steve 3-24-21
+// const requirejs = require('requirejs');
+// const fs = require('fs');
+// const ics = require('ics');
+//npm so require works client/browser side. ----------------------------Steve 3-24-21
+
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
 const db = require("./models");

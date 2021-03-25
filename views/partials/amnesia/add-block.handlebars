@@ -6,8 +6,8 @@
     <div class="col-2 listtext">{{this.duration}} minutes</div>
     <div class="col-2 listtext">Every {{this.repeat_cycle}} days</div>
     
-
-    <div class="col-1 buttontop"><button type="button" class="btn btn-dark" data-id="{{this.id}}">Export</button>
+    {{!-- <div class="col-1 buttontop"><button type="button" class="btn btn-dark icsExport" data-id="{{this.id}}">Export</button> --}}
+    <div class="col-1 buttontop"><a href='/api/events/{{this.id}}' class="btn btn-dark icsExport" data-id="{{this.id}}">Export</a>
      {{!-- <button type="button" class="btn btn-dark" data-id="{{this.id}}">Export</button> --}}
      </div>
     </div>
