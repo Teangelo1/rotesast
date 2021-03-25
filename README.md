@@ -45,5 +45,19 @@ None <br/>
 <br/>
 ## Questions <br/>
 Should any questions arise, please contact me at: <br/>
+Robert Sunde:
 Github: www.github.com/robertsunde <br/>
 Email: robertsundeMSU@gmail.com <br/>
+
+Teangelo Burks
+Github: www.github.com/Teangelo1 <br/>
+Email:burks.teangelo@gmail.com <br/>
+
+Steve Black
+Github: www.github.com/SteveBecmpe <br/>
+Email: steveblackecmpe@gmail.com <br/>
+
+Sara Taylor
+Github: www.github.com/SaraSwifti <br/>
+Email: sara.swifti@gmail.com <br/>
+
