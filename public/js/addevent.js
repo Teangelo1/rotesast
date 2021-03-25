@@ -8,7 +8,7 @@
 // })
 // commented out by steve 3-21-21 -------------------------------------------STOP
 // create
-$(document).ready(function() {
+$(document).ready(() => {
   const saveEventBtn = document.getElementById("saveEventBtn");
   if (saveEventBtn) {
     saveEventBtn.addEventListener("click", (e) => {
